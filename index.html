@@ -393,25 +393,28 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-subscribe">
-                <label class="footer-label">Subscribe
-                    <div class="input-wrapper">
-                        <input class="footer-form-input" type="email" name="user_email" placeholder="E-mail"/>
-                        <button class="footer-subscribe-btn" type="button">
-                            <ul class="footer-subscribe-btn-list">
-                                <li class="footer-subscribe-btn-item">
-                                        <p class="footer-subscribe-btn-text">Subscribe</p>
-                                </li>
-                                <li class="footer-subscribe-btn-item">
-                                    <svg class="footer-icon-send" width="24" height="24">
-                                        <use href="./images/icons.svg#icon-send"></use>
-                                    </svg>
-                                </li>
-                            </ul>
-                        </button>
-                    </div>
-                </label>
+            <div class="footer-container-subscribe">
+                <p class="footer-container-subscribe-title">Subscribe</p>
+                <form class="footer-subscribe">
+                    <label for="footer-user-email">
+                    <input class="footer-form-input" 
+                    type="email"
+                    name="footer-user-email"
+                    placeholder="E-mail"
+                    id="footer-user-email"
+                    >
+                    </label>
+                    <button class="footer-subscribe-btn" type="submit">
+                        Subscribe
+                        <svg class="footer-icon-send" 
+                        width="24" 
+                        height="24">
+                        <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
             </div>
+        </div>
     </footer>
 
     <div class="modal-overley">
@@ -479,12 +482,27 @@
                             ></textarea>
                         </div>
                 </div>
-                <div class="modal-field">
-                    <input type="radio"
-                    
-                    >
-                </div>
-
+                    <input 
+                    type="checkbox"
+                    name="policy"
+                    id="policy"
+                    class="modal-check visually-hidden"
+                    value="true">
+                    <label
+                    for="policy"
+                    class="modal-check-text">
+                    <span class="modal-chek-item">
+                        <svg 
+                        class="modal-chec-icon" 
+                        width="10" 
+                        height="8"
+                        >
+                          <use href="./images/icons.svg#icon-check"></use>
+                        </svg>
+                    </span>
+                        I accept the terms and conditions of the 
+                        <a class="modal-check-link" href="">Privacy Policy</a>
+                    </label>
                 <button class="modal-btn" type="submit">Send</button>
             </form>
         </div>
