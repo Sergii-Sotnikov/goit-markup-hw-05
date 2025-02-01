@@ -417,7 +417,7 @@
         </div>
     </footer>
 
-    <div class="modal-overley">
+    <div class="modal-overley is-open">
         <div class="modal">
             <button class="modal-btn-close" type="button">
                 <svg class="modal-btn-close-icon" width="8" height="8">
@@ -480,26 +480,28 @@
                             placeholder="Text input"
                             ></textarea>
                 </div>
-                    <input 
-                    type="checkbox"
-                    name="policy"
-                    id="policy"
-                    class="modal-check visually-hidden"
-                    value="true">
-                    <label
-                    for="policy"
-                    class="modal-check-text">
-                    <span class="modal-chek-item">
-                        <svg 
-                        class="modal-chec-icon" 
-                        width="10" 
-                        height="8"
-                        >
-                          <use href="./images/icons.svg#icon-check"></use>
-                        </svg>
-                    </span>
-                        I accept the terms and conditions of the 
-                        <a class="modal-check-link" href="">Privacy Policy</a>
+                   <div class="modal-field-checkbox">
+                        <input 
+                        type="checkbox"
+                        name="policy"
+                        id="policy"
+                        class="modal-check visually-hidden"
+                        value="true">
+                        <label
+                        for="policy"
+                        class="modal-check-text">
+                        <span class="modal-chek-item">
+                            <svg 
+                            class="modal-chec-icon" 
+                            width="10" 
+                            height="8"
+                            >
+                              <use href="./images/icons.svg#icon-check"></use>
+                            </svg>
+                        </span>
+                            I accept the terms and conditions of the 
+                            <a class="modal-check-link" href="">Privacy Policy</a>
+                   </div>
                     </label>
                 <button class="modal-btn" type="submit">Send</button>
             </form>
