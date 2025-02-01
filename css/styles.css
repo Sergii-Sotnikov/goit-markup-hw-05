@@ -841,7 +841,7 @@ align-items: center;
 .modal-check:checked + .modal-check-text .modal-chek-item {
 background-color: #404BBF;
 border: none;
-fill: #FFFFFF;
+fill: #F4F4FD;
 }
 
 .modal-btn-checkbox {
